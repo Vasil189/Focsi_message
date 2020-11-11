@@ -24,5 +24,17 @@ namespace Focsi_message
         {
             InitializeComponent();
         }
+
+        private void btLogIn_Click(object sender, RoutedEventArgs e)
+        {
+           
+        }
+
+        private void btRegistration_Click(object sender, RoutedEventArgs e)
+        {
+            Register_window register_Window = new Register_window();
+            this.Close();
+            register_Window.Show();
+        }
     }
 }

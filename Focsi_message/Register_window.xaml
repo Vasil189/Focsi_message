@@ -65,7 +65,7 @@
             <TextBox HorizontalAlignment="Left" Height="25" Width="200" FontSize="16" Background="#34495E" Foreground="#FFC2C2C2"/>
         </DockPanel>
         <DockPanel Grid.Row="5">
-            <Button Margin="120,10,120,10" x:Name="btRegister" Click="btRegister_Click"
+            <Button Margin="120,10,120,10" x:Name="btRegister"
                     Content="Register"
                     Background="#446586"
                     Foreground="#FFC2C2C2"/>

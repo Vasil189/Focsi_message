@@ -23,5 +23,14 @@ namespace Focsi_message
         {
             InitializeComponent();
         }
+
+        private void btback_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow window = new MainWindow();
+            this.Close();
+            window.Show();
+        }
+
+        
     }
 }

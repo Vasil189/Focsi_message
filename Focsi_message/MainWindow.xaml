@@ -67,7 +67,7 @@
         </DockPanel>
 
         <DockPanel Grid.Row="4">
-            <Button Margin="120,10,120,10" x:Name="btLogIn" Click="btLogIn_Click"
+            <Button Margin="120,10,120,10" x:Name="btLogIn"
                     Content="Enter"
                     Background="#446586"
                     Foreground="#FFC2C2C2"/>
