@@ -5,8 +5,79 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Focsi_message"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+          Background="#2E4053"
+        Title="MainWindow" Height="400" Width="400" MaxHeight="400" MinHeight="400" MaxWidth="400" MinWidth="400">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <DockPanel Grid.RowSpan="2">
+            <Image Source="C:\Users\d8366\source\repos\Focsi_message\Focsi_message\ico\Foksi.png" Height="170"/>
+        </DockPanel>
+
+        <DockPanel>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="85*"/>
+                    <ColumnDefinition Width="112*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <DockPanel Grid.ColumnSpan="2" Margin="0,0,-0.4,20.6" Grid.RowSpan="2">
+                    <Button  Content="Registration"  x:Name="btRegistration" Click="btRegistration_Click"
+                     HorizontalAlignment="Right"
+                     VerticalAlignment="Top"
+                     Background="Transparent" 
+                     Foreground="#FFC2C2C2"
+                     BorderBrush="Transparent"/>
+                </DockPanel>
+            </Grid>
+
+        </DockPanel>
+        <DockPanel Grid.Row="2" >
+            <Label HorizontalAlignment="Left"  VerticalAlignment="Center" 
+                   Content="Login:" 
+                   Margin="60,0,0,0" 
+                   FontSize="16" 
+                   Foreground="#FFC2C2C2"
+                   />
+            <TextBox x:Name="tbLogin" HorizontalAlignment="Left" Height="25" Width="200" FontSize="16" 
+                     Background="#34495E"
+                     Foreground="#FFC2C2C2"/>
+        </DockPanel>
+        <DockPanel Grid.Row="3">
+            <Label HorizontalAlignment="Left"  VerticalAlignment="Center" 
+                   Content="Password:" 
+                   Margin="35,0,0,0" 
+                   FontSize="16"
+                   Foreground="#FFC2C2C2"/>
+            <PasswordBox x:Name="pbPassword" HorizontalAlignment="Left" Height="25" Width="200" FontSize="16" 
+                         Background="#34495E"
+                         Foreground="#FFC2C2C2"/>
+        </DockPanel>
+
+        <DockPanel Grid.Row="4">
+            <Button Margin="120,10,120,10" x:Name="btLogIn" Click="btLogIn_Click"
+                    Content="Enter"
+                    Background="#446586"
+                    Foreground="#FFC2C2C2"/>
+        </DockPanel>
+
+        <DockPanel Grid.Row="5">
+            <Label  Content="" x:Name="lbError"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Foreground="#B0241F "/>
+        </DockPanel>
     </Grid>
 </Window>
