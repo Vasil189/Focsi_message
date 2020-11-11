@@ -1,0 +1,42 @@
+﻿<Window x:Class="Focsi_message.Activation_window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Focsi_message"
+        mc:Ignorable="d"
+        
+        
+      Background="#2E4053"
+        Title="Window2" Height="350" Width="400" MinHeight="350" MaxHeight="350" MinWidth="400" MaxWidth="400">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="7*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <DockPanel Grid.Row="1" Grid.ColumnSpan="2" Margin="0,0.4,0,0">
+            <Label Content="Your account will receive an activation code. " FontSize="14" 
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Foreground="#FFC2C2C2"/>
+        </DockPanel>
+        <DockPanel Grid.Row="2" Grid.ColumnSpan="2" Margin="0,0,0,70" Grid.RowSpan="2">
+            <Label HorizontalAlignment="Left"  VerticalAlignment="Center" Content="Activation code:" Margin="30,0,0,0" FontSize="16" Foreground="#FFC2C2C2"/>
+            <TextBox HorizontalAlignment="Left" Height="25" Width="200" FontSize="16" Background="#34495E" Foreground="#FFC2C2C2"/>
+        </DockPanel>
+        <DockPanel Grid.Row="3" Grid.ColumnSpan="2" Margin="0,0.4,0,0">
+            <Button Margin="120,10,120,10" x:Name="btActivate" 
+                    Content="Activate"
+                    Background="#446586"
+                    Foreground="#FFC2C2C2"/>
+        </DockPanel>
+    </Grid>
+</Window>

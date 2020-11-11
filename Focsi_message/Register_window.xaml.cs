@@ -31,6 +31,11 @@ namespace Focsi_message
             window.Show();
         }
 
-        
+        private void btRegister_Click(object sender, RoutedEventArgs e)
+        {
+            Activation_window activation_Window = new Activation_window();
+            this.Close();
+            activation_Window.Show();
+        }
     }
 }
