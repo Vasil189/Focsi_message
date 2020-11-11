@@ -15,20 +15,13 @@ using System.Windows.Shapes;
 namespace Focsi_message
 {
     /// <summary>
-    /// Interaction logic for Activation_window.xaml
+    /// Interaction logic for Messenger_window.xaml
     /// </summary>
-    public partial class Activation_window : Window
+    public partial class Messenger_window : Window
     {
-        public Activation_window()
+        public Messenger_window()
         {
             InitializeComponent();
-        }
-
-        private void btActivate_Click(object sender, RoutedEventArgs e)
-        {
-            MainWindow mainWindow = new MainWindow();
-            this.Close();
-            mainWindow.Show();
         }
     }
 }

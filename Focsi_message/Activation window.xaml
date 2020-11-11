@@ -36,7 +36,7 @@
             <Button Margin="120,10,120,10" x:Name="btActivate" 
                     Content="Activate"
                     Background="#446586"
-                    Foreground="#FFC2C2C2"/>
+                    Foreground="#FFC2C2C2" Click="btActivate_Click"/>
         </DockPanel>
     </Grid>
 </Window>

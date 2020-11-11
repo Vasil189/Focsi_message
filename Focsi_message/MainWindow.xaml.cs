@@ -36,5 +36,12 @@ namespace Focsi_message
             this.Close();
             register_Window.Show();
         }
+
+        private void btLogIn_Click_1(object sender, RoutedEventArgs e)
+        {
+            Messenger_window messenger_Window = new Messenger_window();
+            this.Close();
+            messenger_Window.Show();
+        }
     }
 }
